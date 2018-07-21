@@ -12,7 +12,9 @@ public class HelloCotroller {
     private HelloService helloService;
     @RequestMapping("/getHello")
     public String getHello(){
+        System.out.println();
         return helloService.sayHello();
+
     }
 
 }
